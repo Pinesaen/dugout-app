@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="350" height="200" viewBox="0 0 350 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="350" height="200" fill="#1A2234"/>
+  
+  <!-- Baseball Field -->
+  <path d="M0 150L175 50L350 150L350 200L0 200Z" fill="#2F3B52"/>
+  <line x1="175" y1="50" x2="175" y2="200" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="5 5"/>
+  
+  <!-- Pitcher Figure -->
+  <circle cx="175" cy="120" r="15" fill="#FFFFFF"/>
+  <line x1="175" y1="135" x2="175" y2="160" stroke="#FFFFFF" stroke-width="4"/>
+  <line x1="175" y1="140" x2="155" y2="155" stroke="#FFFFFF" stroke-width="4"/>
+  <line x1="175" y1="140" x2="195" y2="155" stroke="#FFFFFF" stroke-width="4"/>
+  <line x1="175" y1="160" x2="165" y2="180" stroke="#FFFFFF" stroke-width="4"/>
+  <line x1="175" y1="160" x2="185" y2="180" stroke="#FFFFFF" stroke-width="4"/>
+  
+  <!-- Baseball -->
+  <circle cx="215" cy="90" r="5" fill="#FFFFFF"/>
+  <path d="M210 87C210 85 220 85 220 87" stroke="#1A2234" stroke-width="1"/>
+  
+  <!-- Text -->
+  <text x="20" y="30" fill="#FFFFFF" font-family="Arial" font-size="16">Bullpen Training Session</text>
+</svg> 

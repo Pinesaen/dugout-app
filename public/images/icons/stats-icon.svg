@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="#2B4C7E"/>
+  
+  <!-- Bar Chart -->
+  <rect x="60" y="120" width="20" height="40" fill="#FFFFFF"/> <!-- Bar 1 -->
+  <rect x="90" y="80" width="20" height="80" fill="#FFFFFF"/> <!-- Bar 2 -->
+  <rect x="120" y="40" width="20" height="120" fill="#FFFFFF"/> <!-- Bar 3 -->
+  
+  <!-- Line Graph -->
+  <path d="M60 100 L90 60 L120 80 L150 40" stroke="#FFFFFF" stroke-width="4" fill="none"/>
+  
+  <!-- Dots -->
+  <circle cx="60" cy="100" r="4" fill="#FFFFFF"/>
+  <circle cx="90" cy="60" r="4" fill="#FFFFFF"/>
+  <circle cx="120" cy="80" r="4" fill="#FFFFFF"/>
+  <circle cx="150" cy="40" r="4" fill="#FFFFFF"/>
+</svg> 

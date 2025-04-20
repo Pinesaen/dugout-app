@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* DUGOUT Brand Colors */
+    --deep-navy: 210 60% 11%;
+    --warm-red: 354 77% 56%;
+    --off-white: 0 0% 96%;
+    --sand-beige: 33 25% 88%;
+    --electric-blue: 211 100% 50%;
+
+    /* System Colors */
+    --background: var(--deep-navy);
+    --foreground: var(--off-white);
+    --card: var(--deep-navy);
+    --card-foreground: var(--off-white);
+    --popover: var(--deep-navy);
+    --popover-foreground: var(--off-white);
+    --primary: var(--warm-red);
+    --primary-foreground: var(--off-white);
+    --secondary: var(--sand-beige);
+    --secondary-foreground: var(--deep-navy);
+    --muted: 210 40% 20%;
+    --muted-foreground: var(--sand-beige);
+    --accent: var(--electric-blue);
+    --accent-foreground: var(--off-white);
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: var(--off-white);
+    --border: var(--sand-beige);
+    --input: var(--sand-beige);
+    --ring: var(--warm-red);
+    
+    /* Sidebar Colors */
+    --sidebar-background: var(--deep-navy);
+    --sidebar-foreground: var(--off-white);
+    --sidebar-primary: var(--warm-red);
+    --sidebar-primary-foreground: var(--off-white);
+    --sidebar-accent: var(--electric-blue);
+    --sidebar-accent-foreground: var(--off-white);
+    --sidebar-border: var(--sand-beige);
+    --sidebar-ring: var(--warm-red);
+
+    /* Other */
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-montserrat), system-ui, sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

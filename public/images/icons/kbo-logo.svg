@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="#003876"/>
+  
+  <!-- KBO Letters -->
+  <path d="M40 60 L40 140 M40 100 L70 60 M40 100 L70 140" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/> <!-- K -->
+  <path d="M80 60 C120 60 120 140 80 140 C40 140 40 60 80 60" stroke="#FFFFFF" stroke-width="12" fill="none"/> <!-- B -->
+  <path d="M140 60 C180 60 180 140 140 140 C100 140 100 60 140 60" stroke="#FFFFFF" stroke-width="12" fill="none"/> <!-- O -->
+  
+  <!-- Baseball Seams -->
+  <path d="M20 100C20 55 55 20 100 20" stroke="#FFFFFF" stroke-width="4" stroke-dasharray="10 5"/>
+  <path d="M180 100C180 145 145 180 100 180" stroke="#FFFFFF" stroke-width="4" stroke-dasharray="10 5"/>
+</svg> 

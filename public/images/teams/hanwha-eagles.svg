@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="#FF6B00"/>
+  
+  <!-- Eagle Head -->
+  <path d="M70 70 L100 120 L130 70" fill="#FFFFFF" stroke="#000000" stroke-width="4"/> <!-- Head Shape -->
+  <path d="M85 90 L115 90" stroke="#000000" stroke-width="4"/> <!-- Beak -->
+  <circle cx="85" cy="80" r="5" fill="#000000"/> <!-- Left Eye -->
+  <circle cx="115" cy="80" r="5" fill="#000000"/> <!-- Right Eye -->
+  
+  <!-- Eagle Wings -->
+  <path d="M40 100 Q70 120 100 100" stroke="#FFFFFF" stroke-width="8" fill="none"/> <!-- Left Wing -->
+  <path d="M100 100 Q130 120 160 100" stroke="#FFFFFF" stroke-width="8" fill="none"/> <!-- Right Wing -->
+  
+  <!-- Team Name -->
+  <path d="M40 160 Q100 180 160 160" stroke="#FFFFFF" stroke-width="4" fill="none"/>
+</svg> 
