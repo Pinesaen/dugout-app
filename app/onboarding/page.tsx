@@ -13,8 +13,8 @@ import { Input } from "@/components/ui/input"
 const TEAMS = [
   { id: "doosan", name: "Doosan Bears", logo: "/images/teams/doosan-bears.png" },
   { id: "lg", name: "LG Twins", logo: "/images/teams/lg-twins.png" },
-  { id: "kiwoom", name: "Kiwoom Heroes", logo: "/images/teams/kiwoom-heroes.png" },
-  { id: "hanwha", name: "Hanwha Eagles", logo: "/images/teams/hanwha-eagles.png" },
+  { id: "kia", name: "KIA Tigers", logo: "/images/teams/kia-tigers.png" },
+  { id: "samsung", name: "Samsung Lions", logo: "/images/teams/samsung-lions.png" },
 ]
 
 const LOGIN_OPTIONS = [
