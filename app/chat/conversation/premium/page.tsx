@@ -141,22 +141,30 @@ export default function PremiumConversationPage() {
                 <div
                   key={message.id}
                   className={`flex ${
-                    message.sender === "user" ? "justify-end" : "justify-start"
+                    message.sender === "system" 
+                      ? "justify-center"
+                      : message.sender === "user" 
+                      ? "justify-end" 
+                      : "justify-start"
                   } items-start gap-2`}
                 >
                   {message.sender === "athlete" && (
-                    <Avatar className="h-8 w-8">
+                    <Avatar className="h-8 w-8 ring-2 ring-dugout-red/20">
                       <AvatarImage src="/images/teams/lg-twins.png" alt="Yang Eui-ji" />
                       <AvatarFallback>YE</AvatarFallback>
                     </Avatar>
                   )}
                   <div
-                    className={`max-w-[70%] rounded-lg p-3 ${
+                    className={`${
                       message.sender === "user"
                         ? "bg-dugout-red text-dugout-white"
                         : message.sender === "system"
-                        ? "bg-dugout-beige/20 text-dugout-beige"
+                        ? "bg-dugout-beige/10 text-dugout-beige/80 text-center px-6 py-2 text-sm animate-fade-in"
                         : "bg-dugout-beige/20 text-dugout-white"
+                    } ${
+                      message.sender === "system" 
+                        ? "rounded-full" 
+                        : "rounded-lg p-3 max-w-[70%] shadow-lg"
                     }`}
                   >
                     {message.content}
@@ -164,12 +172,14 @@ export default function PremiumConversationPage() {
                       <img
                         src={message.media}
                         alt="Media content"
-                        className="mt-2 rounded-lg"
+                        className="mt-2 rounded-lg w-full h-auto"
                         width={350}
                         height={200}
                       />
                     )}
-                    <div className="mt-1 text-xs opacity-70">{message.timestamp}</div>
+                    {message.sender !== "system" && (
+                      <div className="mt-1 text-xs opacity-70">{message.timestamp}</div>
+                    )}
                   </div>
                 </div>
               ))}
@@ -196,10 +206,11 @@ export default function PremiumConversationPage() {
               <Button
                 key={emoji}
                 variant="outline"
-                className="flex h-16 w-full flex-col items-center justify-center gap-1 border-dugout-beige/20 bg-transparent p-2 text-dugout-beige hover:bg-dugout-beige/10"
+                className="flex h-16 w-full flex-col items-center justify-center gap-1 border-dugout-beige/20 bg-transparent p-2 text-dugout-beige hover:bg-dugout-beige/10 hover:scale-105 transition-all duration-200 group relative overflow-hidden"
                 onClick={() => handleEmojiSelect(emoji)}
               >
-                <span className="text-2xl leading-none">{emoji}</span>
+                <div className="absolute inset-0 bg-gradient-to-t from-dugout-red/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                <span className="text-2xl leading-none group-hover:transform group-hover:scale-110 transition-transform">{emoji}</span>
                 <span className="text-xs font-medium">{count.toLocaleString()}</span>
               </Button>
             ))}
